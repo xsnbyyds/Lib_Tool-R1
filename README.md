@@ -145,7 +145,7 @@ flowchart TD
 
 ## 安装
 
-1. 下载 `Lib_Tool R1.lua`。
+1. 下载 `Lib_Tool R1.lua`：直接取仓库里的文件，或从 [Releases](https://github.com/xsnbyyds/Lib_Tool-R1/releases) 下载（GitHub 会把附件名规范成 `Lib_Tool.R1.lua`，内容一致）。
 2. 放到手机任意可读目录，常见选择：
    - `/sdcard/`（即 `/storage/emulated/0/`）
    - GG 自带的脚本目录

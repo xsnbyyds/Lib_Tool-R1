@@ -145,7 +145,7 @@ GG APIs used:
 
 ## Installation
 
-1. Download `Lib_Tool R1.lua`.
+1. Download `Lib_Tool R1.lua` — either grab the file from the repo or from [Releases](https://github.com/xsnbyyds/Lib_Tool-R1/releases) (GitHub normalises the asset name to `Lib_Tool.R1.lua`; the content is identical).
 2. Put it anywhere readable, typically:
    - `/sdcard/` (i.e. `/storage/emulated/0/`)
    - GG's own script folder
