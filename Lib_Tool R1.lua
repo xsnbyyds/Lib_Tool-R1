@@ -3,6 +3,7 @@
 -- 作者 TG: @xsnbyyds
 -- 版本 R1 —— 支持中英双语界面
 -- 许可: PolyForm Noncommercial 1.0.0（仅限非商业使用，禁止商用）
+--       SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 --       协议全文见仓库 LICENSE 或
 --       https://polyformproject.org/licenses/noncommercial/1.0.0
 -- ============================================================
