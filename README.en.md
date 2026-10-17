@@ -722,8 +722,6 @@ Released under the **[PolyForm Noncommercial License 1.0.0](LICENSE)**, Copyrigh
 Redistribution must include these terms (or their URL) and keep the `Required Notice` line. The software is provided "as is", without warranty of any kind.
 
 > **This is not an OSI open-source licence.** PolyForm Noncommercial is *source-available*: the source is public, but commercial use is restricted.
->
-> **Earlier versions:** the `v1.0` release was published under MIT, and that grant cannot be revoked. This licence applies to versions from this commit onward.
 
 ---
 
