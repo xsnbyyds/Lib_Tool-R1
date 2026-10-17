@@ -9,7 +9,7 @@
 ![language](https://img.shields.io/badge/language-Lua-2C2D72.svg)
 ![runtime](https://img.shields.io/badge/runtime-GameGuardian-blue.svg)
 ![i18n](https://img.shields.io/badge/i18n-中文%20%7C%20English-success.svg)
-![license](https://img.shields.io/badge/license-MIT-yellow.svg)
+![license](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue.svg)
 [![CI](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml/badge.svg)](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml)
 
 Author / feedback: **TG [@xsnbyyds](https://t.me/xsnbyyds)**
@@ -505,7 +505,7 @@ Lib_Tool-R1/
 ├── Lib_Tool R1.lua      # the script (single file, no dependencies)
 ├── README.md            # Chinese README
 ├── README.en.md         # this file
-├── LICENSE              # MIT
+├── LICENSE              # PolyForm Noncommercial 1.0.0
 ├── .gitignore           # ignores runtime artifacts (cfg / output / temp files)
 ├── .github/
 │   └── workflows/
@@ -713,9 +713,17 @@ Full signatures in [`docs/FUNCTIONS.md`](docs/FUNCTIONS.md). Grouped overview:
 
 ## License
 
-Released under the [MIT License](LICENSE), Copyright (c) 2026 xsnbyyds.
+Released under the **[PolyForm Noncommercial License 1.0.0](LICENSE)**, Copyright (c) 2026 xsnbyyds.
 
-Free to use, modify, redistribute and use commercially; the only requirement is keeping the copyright notice and licence text. Provided "as is", without warranty of any kind.
+**Permitted:** any noncommercial use — personal study, research, experiments, hobby projects, teaching, and use by charitable, educational, public-research, public-safety/health, environmental or government institutions — including modification and redistribution.
+
+**Not permitted:** any **commercial use**, including selling the software or derivatives, using it in a paid service or commercial product, boosting/cheating services, or internal use aimed at commercial advantage. Commercial use requires a separate written licence from the author (TG [@xsnbyyds](https://t.me/xsnbyyds)).
+
+Redistribution must include these terms (or their URL) and keep the `Required Notice` line. The software is provided "as is", without warranty of any kind.
+
+> **This is not an OSI open-source licence.** PolyForm Noncommercial is *source-available*: the source is public, but commercial use is restricted.
+>
+> **Earlier versions:** the `v1.0` release was published under MIT, and that grant cannot be revoked. This licence applies to versions from this commit onward.
 
 ---
 
@@ -734,5 +742,5 @@ The author accepts no liability for any direct or indirect consequence of using 
 ---
 
 <p align="center">
-  <sub>Lib_Tool R1 · MIT · TG <a href="https://t.me/xsnbyyds">@xsnbyyds</a></sub>
+  <sub>Lib_Tool R1 · PolyForm NC · TG <a href="https://t.me/xsnbyyds">@xsnbyyds</a></sub>
 </p>

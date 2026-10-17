@@ -9,7 +9,7 @@
 ![language](https://img.shields.io/badge/language-Lua-2C2D72.svg)
 ![runtime](https://img.shields.io/badge/runtime-GameGuardian-blue.svg)
 ![i18n](https://img.shields.io/badge/i18n-中文%20%7C%20English-success.svg)
-![license](https://img.shields.io/badge/license-MIT-yellow.svg)
+![license](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue.svg)
 [![CI](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml/badge.svg)](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml)
 
 作者 / 反馈：**TG [@xsnbyyds](https://t.me/xsnbyyds)**
@@ -506,7 +506,7 @@ Lib_Tool-R1/
 ├── Lib_Tool R1.lua      # 脚本本体（单文件，无外部依赖）
 ├── README.md            # 中文说明（本文件）
 ├── README.en.md         # English README
-├── LICENSE              # MIT
+├── LICENSE              # PolyForm Noncommercial 1.0.0
 ├── .gitignore           # 忽略运行产物（cfg / 输出 / 临时文件）
 ├── .github/
 │   └── workflows/
@@ -714,9 +714,17 @@ end
 
 ## 许可证
 
-本项目基于 [MIT License](LICENSE) 发布，Copyright (c) 2026 xsnbyyds。
+本项目基于 **[PolyForm Noncommercial License 1.0.0](LICENSE)** 发布，Copyright (c) 2026 xsnbyyds。
 
-可以自由使用、修改、分发、商用，唯一要求是保留原始版权声明与许可证文本。软件按「原样」提供，不含任何担保。
+**允许**：个人学习、研究、实验、业余项目、教学，以及慈善 / 教育 / 公共研究 / 公共安全与卫生 / 环保 / 政府机构等**任何非商业用途**下的使用、修改与再分发。
+
+**不允许**：任何**商业用途**，包括但不限于销售本软件或其修改版、用于付费服务或商业产品、代练 / 商业外挂、以营利为目的的内部使用。商业使用需另行获得作者书面授权（TG [@xsnbyyds](https://t.me/xsnbyyds)）。
+
+再分发时须随附本协议或协议地址，并保留 `Required Notice` 行。软件按「原样」提供，不含任何担保。
+
+> **这不是 OSI 开源协议**：PolyForm Noncommercial 属于「源码可用（source-available）」，源码公开但商业使用受限，因此不能称为严格意义上的开源项目。
+>
+> **历史版本**：`v1.0` Release 发布时采用的是 MIT 协议，该授权不可撤销；本协议自本次提交起对之后的版本生效。
 
 ---
 
@@ -735,5 +743,5 @@ end
 ---
 
 <p align="center">
-  <sub>Lib_Tool R1 · MIT · TG <a href="https://t.me/xsnbyyds">@xsnbyyds</a></sub>
+  <sub>Lib_Tool R1 · PolyForm NC · TG <a href="https://t.me/xsnbyyds">@xsnbyyds</a></sub>
 </p>
