@@ -10,6 +10,7 @@
 ![runtime](https://img.shields.io/badge/runtime-GameGuardian-blue.svg)
 ![i18n](https://img.shields.io/badge/i18n-中文%20%7C%20English-success.svg)
 ![license](https://img.shields.io/badge/license-MIT-yellow.svg)
+[![CI](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml/badge.svg)](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml)
 
 作者 / 反馈：**TG [@xsnbyyds](https://t.me/xsnbyyds)**
 
@@ -507,6 +508,11 @@ Lib_Tool-R1/
 ├── README.en.md         # English README
 ├── LICENSE              # MIT
 ├── .gitignore           # 忽略运行产物（cfg / 输出 / 临时文件）
+├── .github/
+│   └── workflows/
+│       └── ci.yml       # CI：Lua 语法检查 + 冒烟测试
+├── tests/
+│   └── smoke_test.py    # 模拟 GG 环境的端到端测试
 └── docs/
     ├── 技术实现.md       # 关键算法与内部机制详解
     ├── TECHNICAL.md     # Internals (English)
@@ -515,6 +521,24 @@ Lib_Tool-R1/
 ```
 
 脚本为**单文件设计**，不 require、不读外部模块，拷贝一个 `.lua` 即可运行；文档与脚本可以分离维护。
+
+### 自动化检查
+
+每次 push / PR 会跑两个 job：
+
+| Job | 内容 |
+| --- | --- |
+| `Lua syntax` | 用 Lua 5.4 对仓库内所有 `.lua` 做 `loadfile` 编译检查（只编译不执行，不需要真机） |
+| `Smoke test` | 用 [lupa](https://github.com/scoder/lupa) 在**模拟的 GG 环境**里跑完整流程：切换语言 → 选格式 → 写出文件，再断言输出内容 |
+
+本地复跑：
+
+```bash
+pip install lupa
+python tests/smoke_test.py
+```
+
+冒烟测试不碰真实文件系统（`io` / `os` 全指向内存字典），也不依赖 root 或 GG，纯逻辑验证，所以在 CI 里能稳定跑。
 
 ---
 

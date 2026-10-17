@@ -10,6 +10,7 @@
 ![runtime](https://img.shields.io/badge/runtime-GameGuardian-blue.svg)
 ![i18n](https://img.shields.io/badge/i18n-中文%20%7C%20English-success.svg)
 ![license](https://img.shields.io/badge/license-MIT-yellow.svg)
+[![CI](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml/badge.svg)](https://github.com/xsnbyyds/Lib_Tool-R1/actions/workflows/ci.yml)
 
 Author / feedback: **TG [@xsnbyyds](https://t.me/xsnbyyds)**
 
@@ -506,6 +507,11 @@ Lib_Tool-R1/
 ├── README.en.md         # this file
 ├── LICENSE              # MIT
 ├── .gitignore           # ignores runtime artifacts (cfg / output / temp files)
+├── .github/
+│   └── workflows/
+│       └── ci.yml       # CI: Lua syntax check + smoke test
+├── tests/
+│   └── smoke_test.py    # end-to-end test against a mocked GG
 └── docs/
     ├── 技术实现.md       # internals (Chinese)
     ├── TECHNICAL.md     # internals (English)
@@ -514,6 +520,24 @@ Lib_Tool-R1/
 ```
 
 The script is a **single file**: no `require`, no external modules. Copy one `.lua` and it runs; the docs can be maintained separately.
+
+### Continuous integration
+
+Every push / PR runs two jobs:
+
+| Job | What it does |
+| --- | --- |
+| `Lua syntax` | `loadfile`s every `.lua` in the repo with Lua 5.4 — compile only, no execution, no device needed |
+| `Smoke test` | Runs the whole flow inside a **mocked GG environment** via [lupa](https://github.com/scoder/lupa): switch language → pick formats → write files, then asserts the output |
+
+Run it locally:
+
+```bash
+pip install lupa
+python tests/smoke_test.py
+```
+
+The smoke test never touches the real filesystem (`io` / `os` are redirected to an in-memory dict) and needs neither root nor GG, so it is pure logic verification and stable in CI.
 
 ---
 
